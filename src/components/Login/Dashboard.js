@@ -32,19 +32,16 @@ function Dashboard() {
       <div className="d-flex">
         <div className="col-6">
           <div className="chart-container">
-            <h5 className="text-center">Bar Chart</h5>
             <BarChart data={data} height={200} />
           </div>
         </div>
         <div className="col-6">
           <div className="chart-container">
-            <h5 className="text-center">Donut Chart</h5>
             <DonutChart data={data} height={200} />
           </div>
         </div>
         <div className="col-6">
           <div className="chart-container">
-            <h5 className="text-center">Pie Chart</h5>
             <PieChart data={data} height={200} />
           </div>
         </div>

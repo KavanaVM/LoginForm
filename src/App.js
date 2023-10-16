@@ -1,11 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import Form from './components/Form';
+import "./App.css";
+import Form from "./components/Login/Form";
+import Dashboard from "./components/Login/Dashboard";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-     <Form/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Form />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
